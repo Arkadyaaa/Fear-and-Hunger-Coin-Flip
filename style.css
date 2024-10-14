@@ -1,0 +1,166 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #000;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    white-space: pre;
+}
+  
+.bg-image {
+    background-color: rgba(20,20,20);
+    
+    /* Center and scale */
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.video-player{
+    background-color: rgba(20,20,20);
+
+    height: 70%;
+    width: 70%;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Makes the video responsive */
+video {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio */
+    display: block; /* Removes unwanted spaces around the video */
+}
+
+.main-content{
+    align-items: center;
+}
+  
+.main-panel-bg {
+    background-color: rgba(20,20,20);
+    border-radius: 25px;
+
+    color: white;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 80%;
+    height: 80%;
+    padding: 20px;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    background-color: #FF6961;
+    font-size: 14px;
+
+    margin-left: 1%;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 6px 12px;
+
+    cursor: pointer;
+}
+
+button {
+    background-color: #FF6961;
+    color:white;
+    box-shadow: none;
+    
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+.textinput{
+    padding: 10px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 5px;
+
+    border-radius: 7px;
+    border: none;
+    box-shadow: none;
+
+    text-align: center;
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+#input-text {
+}
+
+#output-text{
+    font-family: 'Roboto', sans-serif;
+    height: 280px;
+    
+    border: none;
+    resize: none;
+    line-height: 1.5;
+    text-align: center justify;
+    overflow: auto;
+}
+
+/* Customize scrollbar thumb color (for Webkit browsers) */
+#output-text::-webkit-scrollbar {
+    width: 12px;
+}
+
+#output-text::-webkit-scrollbar-thumb {
+    background-color: #FF6961;
+    border-radius: 4px;
+}
+
+a:link,
+a:visited{
+    color:#FF6961;
+}
+
+.footer-text{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.footer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+
+    width: 85%;
+    height: 85%;
+    padding: 20px;
+}
